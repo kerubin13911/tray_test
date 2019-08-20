@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>Página inicial</title>
+	</head>
+
+<body bgcolor="#6495ED"/>
+	
+	<h1 align="center">Cadastro de Vendedores</h1>
+<form method="post" action="vendedor.php">
+	Nome:
+		<br><input type="text" name="nome" size="30" placeholder="Insira o nome do vendedor">
+	<br>E-mail:
+		<br><input type="email" name="email" size="30"placeholder="Insira o E-mail">
+
+		<br><input type="submit" value="Enviar">
+</form>
+
+	<h1 align="center">Buscar Vendedores</h1>
+<form method="post" action="busca_vendedor.php">
+	Nome:
+		<br><input type="text" name="nome" size="30" placeholder="Insira o nome do vendedor">
+		<br><input type="submit" value="Buscar">
+</form>
+
+	<h1 align="center">Atualizar Vendedores</h1>
+<form method="post" action="update.php">
+	Identificação:
+		<br><input type="text" name="iden" size="30" placeholder="Identificação">
+	<br>Nome:
+		<br><input type="text" name="nome" size="30" placeholder="Insira o nome do Vendedor">
+	<br>E-mail:
+		<br><input type="email" name="email" size="30" placeholder="Insira o E-mail">
+		<br><input type="submit" value="Atualizar">
+</form>
+
+	<h1 align="center">Excluir Vendedores</h1>
+<form method="post" action="excluir.php">
+	Identificação:
+		<br><input type="text" name="iden" size="30" placeholder="Identificação">
+	<br>Nome:
+		<br><input type="text" name="nome" size="30" placeholder="Insira o nome do Vendedor">
+	<br>E-mail:
+		<br><input type="email" name="email" size="30" placeholder="Insira o E-mail">
+		<br><input type="submit" value="Excluir">
+</form>
+
+	<hr align="center" size="30" color="black">
+	<h1 align="center">Cadastro de Vendas</h1>
+<form method="post" action="venda.php">
+	Identificação do vendedor:
+		<br><input type="text" name="id_vende" size="15" placeholder="Identificação do Vendedor">
+	<br>Data da venda:
+		<br><input type="date" name="data">
+	<br>Valor da venda:
+		<br><input type="text" name="valor" placeholder="Valor">
+		<br><input type="submit" value="Enviar">
+</form>
+
+	<h1 align="center">Listar vendas</h1>
+<form method="post" action="lista.php">
+	Insira a identificação do vendedor:
+		<br><input type="text" name="iden" size="30" placeholder="Insira a identificação">
+		<br><input type="submit" value="Buscar">
+</form>
+
+	<h1 align="center">Listar vendas do dia</h1>
+		<form action="vendatotal.php" method="post">
+			Insira a data:
+			<br><input type="date" name="data"><br>
+			<input type="submit" value="Enviar">
+		</form>
+
+</body>
+
+</html>
